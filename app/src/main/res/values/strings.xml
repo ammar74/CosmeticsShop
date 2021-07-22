@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Online Shop</string>
+    <string name="hair">Hair</string>
+    <string name="body">Body</string>
+    <string name="face">Face</string>
+    <string name="search">Search</string>
+    <string name="welcome">Hello, Emma</string>
+    <string name="beginningText">Let\'s find your favourite cosmetics</string>
+    <string name="user_photo">User photo</string>
+    <string name="Skin">Skin</string>
+    <string name="most_popular">Most popular</string>
+    <string name="category_filter">Category Filter</string>
+</resources>
