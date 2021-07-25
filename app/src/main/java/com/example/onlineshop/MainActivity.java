@@ -7,15 +7,18 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 
 import com.example.onlineshop.adapter.ProductAdapter;
+import com.example.onlineshop.adapter.ProductCategoryAdapter;
 import com.example.onlineshop.model.ProductCategory;
+import com.example.onlineshop.model.Products;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    ProductCategoryAdapter productCategoryAdapter;
+    RecyclerView ProductCatRecycler, ProductItemRecycler;
     ProductAdapter productAdapter;
-    RecyclerView ProductCatRecycler;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +31,18 @@ public class MainActivity extends AppCompatActivity {
         productCategoryList.add(new ProductCategory("4","Hair"));
 
         setProductRecycler(productCategoryList);
+
+        List<Products> productsList=new ArrayList<>();
+        productsList.add(new Products("African Mango Blossom Shower Gel",1,
+                "250 ml","$ 15.00",R.drawable.prod1));
+        productsList.add(new Products("Japanesse Cherry Blossom Shower Gel",2,
+                "350 ml","$ 17.00",R.drawable.prod2));
+        productsList.add(new Products("African Mango Blossom Shower Gel",3,
+                "350 ml","$ 17.00",R.drawable.prod1));
+        productsList.add(new Products("Japanesse Cherry Blossom Shower Gel",4,
+                "350 ml","$ 17.00",R.drawable.prod2));
+
+        setProductItemRecycler(productsList);
     }
 
     private void setProductRecycler(List<ProductCategory> productCategoryList){
@@ -35,7 +50,17 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView.LayoutManager layoutManager=
                 new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
         ProductCatRecycler.setLayoutManager(layoutManager);
-        productAdapter=new ProductAdapter(this,productCategoryList);
-        ProductCatRecycler.setAdapter(productAdapter);
+        productCategoryAdapter =new ProductCategoryAdapter(this,productCategoryList);
+        ProductCatRecycler.setAdapter(productCategoryAdapter);
+    }
+
+
+    private void setProductItemRecycler(List<Products> productsList){
+        ProductItemRecycler=findViewById(R.id.product_recycler);
+        RecyclerView.LayoutManager layoutManager=
+                new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,false);
+        ProductItemRecycler.setLayoutManager(layoutManager);
+        productAdapter =new ProductAdapter(this,productsList);
+        ProductItemRecycler.setAdapter(productAdapter);
     }
 }
