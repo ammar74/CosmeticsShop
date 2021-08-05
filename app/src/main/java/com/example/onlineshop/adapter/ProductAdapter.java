@@ -1,6 +1,7 @@
 package com.example.onlineshop.adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.onlineshop.ProductDetails;
 import com.example.onlineshop.R;
 import com.example.onlineshop.model.Products;
 
@@ -39,6 +41,14 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.realPriceTV.setText(productsList.get(position).getProductPrice());
         holder.realSizeTV.setText(productsList.get(position).getProductQty());
 
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i= new Intent(context, ProductDetails.class);
+                context.startActivity(i);
+
+            }
+        });
     }
 
     @Override

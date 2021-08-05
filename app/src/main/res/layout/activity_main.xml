@@ -132,11 +132,11 @@
         android:layout_width="46dp"
         android:layout_height="38dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
+        android:contentDescription="@string/category_filter"
         app:layout_constraintStart_toEndOf="@+id/constraintLayout"
         app:layout_constraintTop_toBottomOf="@+id/textView2"
-        app:srcCompat="@drawable/ic_filter"
-        android:contentDescription="@string/category_filter" />
+        app:srcCompat="@drawable/ic_filter" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryRecycler"
@@ -151,12 +151,31 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/product_recycler"
-        android:layout_width="298dp"
-        android:layout_height="wrap_content"
+        android:layout_width="0dp"
+        android:layout_height="500dp"
         android:layout_marginTop="16dp"
+        android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="@+id/categoryRecycler"
         app:layout_constraintStart_toStartOf="@+id/filterIV"
-        app:layout_constraintTop_toBottomOf="@+id/categoryRecycler" />
+        app:layout_constraintTop_toBottomOf="@+id/categoryRecycler"
+        tools:listitem="@layout/product_row_item" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/cart_button_bg"
+        android:drawableEnd="@drawable/ic_cart"
+        android:drawablePadding="16sp"
+        android:fontFamily="@font/rubik_medium"
+        android:text="Your Cart Is Empty"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/constraintLayout"
+        app:layout_constraintTop_toBottomOf="@+id/product_recycler" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

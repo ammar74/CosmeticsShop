@@ -11,4 +11,11 @@
     <string name="most_popular">Most popular</string>
     <string name="category_filter">Category Filter</string>
     <string name="product_name">Product Name</string>
+    <string name="size">Size</string>
+    <string name="price">Price</string>
+    <string name="like_item">like item</string>
+    <string name="more">more</string>
+    <string name="back">back</string>
+    <string name="description">description</string>
+    <string name="product_disc">Japanese cherry blossom is a body lotion product uses to enhance the smell of the body and make it more soft.</string>
 </resources>

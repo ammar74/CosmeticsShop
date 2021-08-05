@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable-v24/details_bg.xml" value="0.19054054054054054" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable-v24/ic_cart.xml" value="0.19054054054054054" />
         <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable-v24/ic_heart.xml" value="0.2203125" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable-v24/ic_minus.xml" value="0.19054054054054054" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable-v24/ic_plus.xml" value="0.19054054054054054" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable/cart_button_bg.xml" value="0.19054054054054054" />
         <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable/category_shape.xml" value="0.2203125" />
         <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable/ic_cosmetic.xml" value="0.2203125" />
         <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/drawable/ic_wave.xml" value="0.2203125" />
-        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/activity_main.xml" value="0.25" />
-        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/product_row_item.xml" value="0.5" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/activity_main.xml" value="0.22" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/activity_product_details.xml" value="0.25" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/category_row_item.xml" value="0.15353260869565216" />
+        <entry key="..\:/Users/ammar/AndroidStudioProjects/OnlineShop/app/src/main/res/layout/product_row_item.xml" value="0.25" />
       </map>
     </option>
   </component>
